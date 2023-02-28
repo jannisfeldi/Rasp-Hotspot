@@ -21,8 +21,8 @@
     const toggleSwitch = document.querySelector('.toggle input');
     toggleSwitch.addEventListener('change', function() {
       const action = this.checked ? 'on' : 'off';
-      fetch('togglehotspot.php', {
-        method: 'POST',
+      fetch('togglehotspot.php?action='+action'+', {
+        method: 'GET',
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded'
         },

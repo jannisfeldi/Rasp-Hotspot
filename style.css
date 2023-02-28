@@ -31,10 +31,12 @@ html {
       flex-direction: column;
     }
   }
-      /* Style the toggle switch */
-      .toggle {
+    /* Style the toggle switch */
+    .toggle {
         position: relative;
         display: inline-block;
+        vertical-align: middle;
+        margin-right: 20px; /* Increased margin-right */
         width: 60px;
         height: 34px;
       }
@@ -82,4 +84,13 @@ html {
         -webkit-transform: translateX(26px);
         -ms-transform: translateX(26px);
         transform: translateX(26px);
+      }
+  
+      /* Style the label text */
+      .label-text {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 16px;
+        color: white;
+        margin-left: 10px; /* Added margin-left */
       }
