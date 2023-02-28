@@ -2,33 +2,44 @@ html {
     background-color: #333333;
 }
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    height: 100vh;
-    padding: 20px;
-    box-sizing: border-box;
-    background-color: #333333;
-  }
-  
-  .flexbox {
-    width: 400px;
-    height: 400px;
-    background-color: #222222;
-    border-radius: 50px;
-    box-sizing: border-box;
-    margin-bottom: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    font-family: Verdana, sans-serif;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding: 50px;
+  box-sizing: border-box;
+  background-color: #333333;
+}
+
+.flexbox {
+  position: relative; /* Make the container relative */
+  width: 400px;
+  height: 400px;
+  background-color: #222222;
+  border-radius: 50px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: Verdana, sans-serif;
+  white-space: pre-line;
+  transition: all 0.2s ease-in-out;
+}
+
+.flexbox:hover {
+  transform: translate(-5px, -10px); /* Move the flexbox slightly to the left */
+}
+
+
+
   
   @media screen and (max-width: 480px) {
     .container {
       flex-direction: column;
+      flex-wrap: wrap;
     }
   }
     /* Style the toggle switch */
@@ -39,6 +50,7 @@ html {
         margin-right: 20px; /* Increased margin-right */
         width: 60px;
         height: 34px;
+        
       }
   
       /* Hide default checkbox */
@@ -94,3 +106,8 @@ html {
         color: white;
         margin-left: 10px; /* Added margin-left */
       }
+/* Style the heading text */
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}

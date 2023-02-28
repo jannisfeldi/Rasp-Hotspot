@@ -7,14 +7,18 @@
 <body>
 	<div class="container">
 		<div class="flexbox">
+        Hotspot<br>
+        <span class="label-text">Lädt...</span><span class="label-text">&nbsp;&nbsp;&nbsp;</span>
         <label class="toggle">
         <input type="checkbox">
         <span class="slider"></span>
         </label>
-  <span class="label-text">Toggle Hotspot</span></div>
-		<div class="flexbox">Flexbox 2</div>
-		<div class="flexbox">Flexbox 3</div>
-		<div class="flexbox">Flexbox 4</div>
+        </div>
+		<div class="flexbox">Verbundene Geräte<br>&nbsp;<br>&nbsp;<br>Hi</div>
+		<div class="flexbox">Statistiken</div>
+		<div class="flexbox">Einstellungen</div>
+    <div class="flexbox">Flexbox 5</div>
+    <div class="flexbox">System</div>
 	</div>
 
     <script>
@@ -29,10 +33,10 @@
         .then(function(state) {
           if (state === 'on') {
             toggleSwitch.checked = true;
-            label.textContent = 'Hotspot is on';
+            label.textContent = 'An';
           } else {
             toggleSwitch.checked = false;
-            label.textContent = 'Hotspot is off';
+            label.textContent = 'Aus';
           }
         })
         .catch(function(error) {
