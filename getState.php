@@ -1,3 +1,3 @@
 <?php
-echo exec("cat /Users/jannisfeldmann/Documents/Abschlussprojekt/states/hotspot.state");
+echo exec("cat states/hotspot.state");
 ?>
