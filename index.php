@@ -58,9 +58,35 @@
           console.error('Error getting state:', error);
         });
     }
+    function updateNetworkUsage() {
+      // Get the span element by its ID
+      const totalRX = document.getElementById("totalRX");
+      const totalTX = document.getElementById("totalTX");
+
+      // Make an HTTP request to the API
+      fetch("getNetworkUsage.php?type=download")
+        .then(response => response.text())
+        .then(data => {
+          // Update the text of the span element with the response data
+          totalRX.textContent = data;
+        })
+        .catch(error => {
+          console.error("Error fetching network usage data:", error);
+       });
+       fetch("getNetworkUsage.php?type=upload")
+        .then(response => response.text())
+        .then(data => {
+          // Update the text of the span element with the response data
+          totalTX.textContent = data;
+        })
+        .catch(error => {
+          console.error("Error fetching network usage data:", error);
+       });
+    }
 
     // Update state every 5 seconds
     setInterval(updateState, 500);
+    setInterval(updateNetworkUsage, 1000);
 
     toggleSwitch.addEventListener('change', function() {
       
