@@ -23,9 +23,11 @@
 
 		<div class="flexbox">
         
-        <h2>Statistiken</h2><h2 style="font-size:14px;">Seit letztem Start</h2>
+        <h2>Statistiken</h2><h2 style="font-size:14px;">Daten Nutzung</h2>
     <span>Heruntergeladen: </span> <span id="totalRX">Lädt...</span><br>
-    <span> Hochgeladen:</span> <span id="totalTX">Lädt...</span>
+    <span>Hochgeladen:</span> <span id="totalTX">Lädt...</span><br><br><h2 style="font-size:14px;">System Auslastung</h2>
+    <span>Prozessor: </span> <span id="processor">Lädt...</span><br>
+    <span>Arbeitsspeicher:</span> <span id="memory">Lädt...</span>
     </div>
 
 		<div class="flexbox">Einstellungen</div>
@@ -84,11 +86,38 @@
        });
     }
 
+    function updateSystem() {
+      // Get the span element by its ID
+      const processor = document.getElementById("processor");
+      const memory = document.getElementById("memory");
+
+      // Make an HTTP request to the API
+      fetch("getCpuUsage.php")
+        .then(response => response.text())
+        .then(data => {
+          // Update the text of the span element with the response data
+          processor.textContent = data + "%";
+        })
+        .catch(error => {
+          console.error("Error fetching cpu data:", error);
+       });
+       fetch("getMemoryUsage.php")
+        .then(response => response.text())
+        .then(data => {
+          // Update the text of the span element with the response data
+          memory.textContent = data + " / 4000M";
+        })
+        .catch(error => {
+          console.error("Error fetching memory data:", error);
+       });
+    }
     // Update state every 5 seconds
     setInterval(updateState, 500);
     setInterval(updateNetworkUsage, 1000);
+    setInterval(updateSystem, 1000);
 
-    toggleSwitch.addEventListener('change', function() {
+    toggleSwitch.addEventListener('change', function(event) {
+      event.preventDefault();
       
       const action = this.checked ? 'on' : 'off';
       fetch('togglehotspot.php?action=' + action)
