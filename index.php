@@ -7,18 +7,29 @@
 <body>
 	<div class="container">
 		<div class="flexbox">
+    
         Hotspot<br>
-        <span class="label-text">Lädt...</span><span class="label-text">&nbsp;&nbsp;&nbsp;</span>
+        <span class="label-text">Lädt...</span><span class="label-text"></span>
         <label class="toggle">
         <input type="checkbox">
         <span class="slider"></span>
         </label>
         </div>
-		<div class="flexbox">Verbundene Geräte<br>&nbsp;<br>&nbsp;<br>Hi</div>
-		<div class="flexbox">Statistiken</div>
+
+		<div class="flexbox">Verbundene Geräte<br>&nbsp;<br>&nbsp;<br>
+    soon</div>
+
+		<div class="flexbox">Statistiken<br>&nbsp;<br>&nbsp;<br>
+    <span class="totalRX">Total Download: </span><br>&nbsp;
+    <span class="totalTX">Total Upload:</span>
+    </div>
+
 		<div class="flexbox">Einstellungen</div>
+
     <div class="flexbox">Flexbox 5</div>
+
     <div class="flexbox">System</div>
+
 	</div>
 
     <script>

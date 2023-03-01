@@ -20,8 +20,8 @@ html {
   border-radius: 50px;
   box-sizing: border-box;
   margin-bottom: 20px;
-  display: flex;
   justify-content: center;
+  text-align: center;
   align-items: center;
   color: #fff;
   font-family: Verdana, sans-serif;
@@ -29,6 +29,7 @@ html {
   transition: all 0.2s ease-in-out;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
+
 
 .flexbox:hover {
   transform: translate(-5px, -10px); /* Move the flexbox slightly to the left */
@@ -48,7 +49,6 @@ html {
         position: relative;
         display: inline-block;
         vertical-align: middle;
-        margin-right: 20px; /* Increased margin-right */
         width: 60px;
         height: 34px;
         
