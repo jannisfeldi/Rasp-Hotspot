@@ -23,11 +23,10 @@
 
 		<div class="flexbox">
         
-        <h2>Statistiken</h2><h2 style="font-size:14px;">Daten Nutzung</h2>
-    <span>Heruntergeladen: </span> <span id="totalRX">Lädt...</span><br>
-    <span>Hochgeladen:</span> <span id="totalTX">Lädt...</span><br><br><h2 style="font-size:14px;">System Auslastung</h2>
-    <span>Prozessor: </span> <span id="processor">Lädt...</span><br>
-    <span>Arbeitsspeicher:</span> <span id="memory">Lädt...</span>
+        <h2>Statistiken</h2><h2 style="font-size:14px;">Daten Nutzung</h2><span>Heruntergeladen: </span> <span id="totalRX">Lädt...</span><br>
+    <span>Hochgeladen:</span> <span id="totalTX">Lädt...</span><br><br><h2 style="font-size:14px;">System Auslastung</h2><span>Prozessor: </span> <span id="processor">Lädt...</span><br>
+    <span>Arbeitsspeicher:</span> <span id="memory">Lädt...</span><br>
+    <span>Temparatur:</span> <span id="temp">Lädt...</span>
     </div>
 
 		<div class="flexbox">Einstellungen</div>
@@ -90,6 +89,7 @@
       // Get the span element by its ID
       const processor = document.getElementById("processor");
       const memory = document.getElementById("memory");
+      const temp = document.getElementById("temp");
 
       // Make an HTTP request to the API
       fetch("getCpuUsage.php")
@@ -106,6 +106,15 @@
         .then(data => {
           // Update the text of the span element with the response data
           memory.textContent = data + " / 4000M";
+        })
+        .catch(error => {
+          console.error("Error fetching memory data:", error);
+       });
+       fetch("getCpuTemp.php")
+        .then(response => response.text())
+        .then(data => {
+          // Update the text of the span element with the response data
+          temp.textContent = data;
         })
         .catch(error => {
           console.error("Error fetching memory data:", error);
