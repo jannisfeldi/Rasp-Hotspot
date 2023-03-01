@@ -27,6 +27,7 @@ html {
   font-family: Verdana, sans-serif;
   white-space: pre-line;
   transition: all 0.2s ease-in-out;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .flexbox:hover {
