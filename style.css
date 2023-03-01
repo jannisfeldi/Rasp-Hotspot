@@ -1,3 +1,13 @@
+:root {
+  --pink-1: #ffc0cb;   /* light pink */
+  --pink-2: #ff69b4;   /* hot pink */
+  --pink-3: #ff1493;   /* deep pink */
+  --greenish-1: #98fb98;   /* pale green */
+  --greenish-2: #00ff7f;   /* spring green */
+  --greenish-3: #2e8b57;   /* sea green */
+}
+
+
 html {
     background-color: #333333;
 }
