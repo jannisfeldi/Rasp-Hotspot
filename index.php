@@ -43,7 +43,8 @@
       
     <h2>System</h2><br><br><br>
 
-    
+    <button class="button-green">Neustarten</button><br>
+    <button onclick='window.location.href = "https://google.com";' class="button-red">Ausschalten</button>
     </div>
 
 	</div>
@@ -158,7 +159,6 @@
         });
         updateState()
 });
-
   </script>
 </body>
 </html>

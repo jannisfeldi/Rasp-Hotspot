@@ -145,3 +145,33 @@ h2 {
   font-size: 24px;
   margin-bottom: 10px;
 }
+.button-red {
+  background-color: var(--pink-3);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.button-red:hover {
+  background-color: #f67da9;
+}
+.button-green {
+  background-color: var(--greenish-2);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.button-green:hover {
+  background-color: var(--greenish-1)
+}
