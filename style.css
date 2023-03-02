@@ -7,6 +7,23 @@
   --greenish-3: #2e8b57;   /* sea green */
 }
 
+@keyframes flash-on {
+  from {
+    background-color: #ccc;
+  }
+  to {
+    background-color: var(--pink-3);
+  }
+}
+
+@keyframes flash-off {
+  from {
+    background-color: #2196F3;
+  }
+  to {
+    background-color: var(--pink-3);
+  }
+}
 
 html {
     background-color: #333333;
@@ -116,6 +133,12 @@ html {
         font-size: 16px;
         color: white;
         margin-left: 10px; /* Added margin-left */
+      }
+      .toggle.flashing-on .slider {
+        animation: flash-on 0.5s ease-in-out alternate 10;
+      }
+      .toggle.flashing-off .slider {
+        animation: flash-off 0.5s ease-in-out alternate 10;
       }
 /* Style the heading text */
 h2 {

@@ -29,11 +29,22 @@
     <span>Temparatur:</span> <span id="temp">Lädt...</span>
     </div>
 
-		<div class="flexbox">Einstellungen</div>
+		<div class="flexbox">
+      
+        <h2>Einstellungen</h2><br><br><br>
+    </div>
 
-    <div class="flexbox">Flexbox 5</div>
+    <div class="flexbox">
+      
+    <h2>Infos</h2><br><br><br>
+    </div>
 
-    <div class="flexbox">System</div>
+    <div class="flexbox">
+      
+    <h2>System</h2><br><br><br>
+
+    
+    </div>
 
 	</div>
 
@@ -125,19 +136,29 @@
     setInterval(updateNetworkUsage, 1000);
     setInterval(updateSystem, 1000);
 
-    toggleSwitch.addEventListener('change', function(event) {
-      event.preventDefault();
+    document.querySelector('.toggle input').addEventListener('click', function(e) {
+      e.preventDefault();
+      var toggle = this.parentElement;
       
       const action = this.checked ? 'on' : 'off';
+      if (action == "on") {
+        toggle.classList.add('flashing-on');
+      } else {
+        toggle.classList.add('flashing-off');
+      }
       fetch('togglehotspot.php?action=' + action)
         .then(function(response) {
           console.log('Toggle switch ' + action);
+          toggle.classList.remove('flashing-on');
+          toggle.classList.remove('flashing-off');
+          toggle.querySelector('input').checked = !toggle.querySelector('input').checked;
         })
         .catch(function(error) {
           console.error('Error toggling switch:', error);
         });
         updateState()
-    });
+});
+
   </script>
 </body>
 </html>
