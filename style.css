@@ -175,3 +175,20 @@ h2 {
 .button-green:hover {
   background-color: var(--greenish-1)
 }
+input {
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  background-color: #444444;
+  color: #ffffff;
+}
+
+input:focus {
+  outline: none;
+}
+
+input::placeholder {
+  color: #999999;
+}

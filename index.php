@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Webinterface</title>
+	<title>PiAccess Interface</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -9,7 +9,7 @@
 		<div class="flexbox">
     
         <h2>Hotspot</h2><br><br><br>
-        <span class="label-text">Lädt...</span><span class="label-text"></span><br>
+        <span class="label-text">Loading...</span><span class="label-text"></span><br>
         <label class="toggle">
         <input type="checkbox">
         <span class="slider"></span>
@@ -18,20 +18,28 @@
 
 		<div class="flexbox">
 
-        <h2>Verbundene geräte</h2><br><br><br>
+        <h2>Connected devices</h2><br><br><br>
         soon</div>
 
 		<div class="flexbox">
         
-        <h2>Statistiken</h2><h2 style="font-size:14px;">Daten Nutzung</h2><span>Heruntergeladen: </span> <span id="totalRX">Lädt...</span><br>
-    <span>Hochgeladen:</span> <span id="totalTX">Lädt...</span><br><span>Aktuell: </span> <span id="bandwidth">Lädt...</span><br><br><h2 style="font-size:14px;">System Auslastung</h2><span>Prozessor: </span> <span id="processor">Lädt...</span><br>
-    <span>Arbeitsspeicher:</span> <span id="memory">Lädt...</span><br>
-    <span>Temparatur:</span> <span id="temp">Lädt...</span>
+        <h2>Statistiken</h2><h2 style="font-size:14px;">Data Usage</h2><span>Downloaded: </span> <span id="totalRX">Loading...</span><br>
+    <span>Uploaded:</span> <span id="totalTX">Loading...</span><br><span>Now: </span> <span id="bandwidth">Loading...</span><br><br><h2 style="font-size:14px;">System Auslastung</h2><span>Prozessor: </span> <span id="processor">Loading...</span><br>
+    <span>Memory:</span> <span id="memory">Loading...</span><br>
+    <span>Temprature:</span> <span id="temp">Loading...</span>
     </div>
 
 		<div class="flexbox">
       
-        <h2>Einstellungen</h2><br><br><br>
+        <h2>Einstellungen</h2><br>
+        <form>
+      <label for="input-box">Network Name:</label>
+      <input type="text" id="input-box" placeholder="Network Name">
+      <label for="input-box">Network Password:</label>
+      <input type="password" id="input-box" placeholder="Network Password">
+      <button class="button-green">Save Changes & Restart Network</button>
+    </form>
+    
     </div>
 
     <div class="flexbox">
@@ -43,8 +51,8 @@
       
     <h2>System</h2><br><br><br>
 
-    <button class="button-green">Neustarten</button><br>
-    <button onclick='window.location.href = "https://google.com";' class="button-red">Ausschalten</button>
+    <button class="button-green">Restart</button><br>
+    <button onclick='window.location.href = "https://google.com";' class="button-red">Shutdown</button>
     </div>
 
 	</div>
