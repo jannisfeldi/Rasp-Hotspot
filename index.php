@@ -24,7 +24,7 @@
 		<div class="flexbox">
         
         <h2>Statistiken</h2><h2 style="font-size:14px;">Daten Nutzung</h2><span>Heruntergeladen: </span> <span id="totalRX">Lädt...</span><br>
-    <span>Hochgeladen:</span> <span id="totalTX">Lädt...</span><br><br><h2 style="font-size:14px;">System Auslastung</h2><span>Prozessor: </span> <span id="processor">Lädt...</span><br>
+    <span>Hochgeladen:</span> <span id="totalTX">Lädt...</span><br><span>Aktuell: </span> <span id="bandwidth">Lädt...</span><br><br><h2 style="font-size:14px;">System Auslastung</h2><span>Prozessor: </span> <span id="processor">Lädt...</span><br>
     <span>Arbeitsspeicher:</span> <span id="memory">Lädt...</span><br>
     <span>Temparatur:</span> <span id="temp">Lädt...</span>
     </div>
@@ -75,6 +75,7 @@
       // Get the span element by its ID
       const totalRX = document.getElementById("totalRX");
       const totalTX = document.getElementById("totalTX");
+      const bandwidth = document.getElementById("bandwidth");
 
       // Make an HTTP request to the API
       fetch("getNetworkUsage.php?type=download")
@@ -91,6 +92,15 @@
         .then(data => {
           // Update the text of the span element with the response data
           totalTX.textContent = data;
+        })
+        .catch(error => {
+          console.error("Error fetching network usage data:", error);
+       });
+       fetch("getTroughput.php")
+        .then(response => response.text())
+        .then(data => {
+          // Update the text of the span element with the response data
+          bandwidth.textContent = data;
         })
         .catch(error => {
           console.error("Error fetching network usage data:", error);

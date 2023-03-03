@@ -8,7 +8,7 @@ if(isset($_GET['action'])) {
 
     }
     if($_GET['action'] == "off") {
-        exec('sleep 1 && echo "off" > states/hotspot.state');
+        exec('sleep 3 && echo "off" > states/hotspot.state');
     }
 }
 ?>
