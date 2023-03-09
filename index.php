@@ -21,7 +21,10 @@
 		<div class="flexbox">
 
         <h2>Connected devices</h2><br><br><br>
-        soon</div>
+        <span id="connecteddevices"></span>
+      
+      
+        </div>
 
 		<div class="flexbox">
         
