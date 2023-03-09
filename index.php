@@ -65,33 +65,12 @@
 	</div>
 
     <script>
-    const toggleSwitch = document.querySelector('.toggle input');
-    const label = document.querySelector('.label-text');
-
-    function updateState() {
-      fetch('getState.php?state=hotspot')
-        .then(function(response) {
-          return response.text();
-        })
-        .then(function(state) {
-          if (state === 'on') {
-            toggleSwitch.checked = true;
-            label.textContent = 'An';
-          } else {
-            toggleSwitch.checked = false;
-            label.textContent = 'Aus';
-          }
-        })
-        .catch(function(error) {
-          console.error('Error getting state:', error);
-        });
-    }
     function updateNetworkUsage() {
       // Get the span element by its ID
       const totalRX = document.getElementById("totalRX");
       const totalTX = document.getElementById("totalTX");
       const bandwidth = document.getElementById("bandwidth");
-      const connectedDevices = document.getElementById("connceteddevices");
+      const connectedDevices = document.getElementById("connecteddevices");
 
       // Make an HTTP request to the API
       fetch("getNetworkUsage.php?type=download")
@@ -121,7 +100,7 @@
         .catch(error => {
           console.error("Error fetching network usage data:", error);
        });
-       fetch("getConnectedDevices.php")
+       fetch("states/connectedDevices.state")
         .then(response => response.text())
         .then(data => {
           // Update the text of the span element with the response data
@@ -168,32 +147,8 @@
        });
     }
     // Update state every 5 seconds
-    setInterval(updateState, 500);
     setInterval(updateNetworkUsage, 1000);
     setInterval(updateSystem, 1000);
-
-    document.querySelector('.toggle input').addEventListener('click', function(e) {
-      e.preventDefault();
-      var toggle = this.parentElement;
-      
-      const action = this.checked ? 'on' : 'off';
-      if (action == "on") {
-        toggle.classList.add('flashing-on');
-      } else {
-        toggle.classList.add('flashing-off');
-      }
-      fetch('togglehotspot.php?action=' + action)
-        .then(function(response) {
-          console.log('Toggle switch ' + action);
-          toggle.classList.remove('flashing-on');
-          toggle.classList.remove('flashing-off');
-          toggle.querySelector('input').checked = !toggle.querySelector('input').checked;
-        })
-        .catch(function(error) {
-          console.error('Error toggling switch:', error);
-        });
-        updateState()
-});
   </script>
 </body>
 </html>
