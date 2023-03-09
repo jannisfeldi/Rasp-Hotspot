@@ -8,12 +8,14 @@
 	<div class="container">
 		<div class="flexbox">
     
-        <h2>Hotspot</h2><br><br><br>
-        <span class="label-text">Loading...</span><span class="label-text"></span><br>
-        <label class="toggle">
-        <input type="checkbox">
-        <span class="slider"></span>
-        </label>
+        <h2>Welcome</h2><br><br>
+        <a>
+          This is the PiAccess Interface.
+          You can set and setting for the WiFi 
+          and control it completly from here.
+          You are also able to see Statistics about the System and Network.
+        </a>
+
         </div>
 
 		<div class="flexbox">
@@ -23,15 +25,14 @@
 
 		<div class="flexbox">
         
-        <h2>Statistiken</h2><h2 style="font-size:14px;">Data Usage</h2><span>Downloaded: </span> <span id="totalRX">Loading...</span><br>
-    <span>Uploaded:</span> <span id="totalTX">Loading...</span><br><span>Now: </span> <span id="bandwidth">Loading...</span><br><br><h2 style="font-size:14px;">System Auslastung</h2><span>Prozessor: </span> <span id="processor">Loading...</span><br>
-    <span>Memory:</span> <span id="memory">Loading...</span><br>
-    <span>Temprature:</span> <span id="temp">Loading...</span>
+        <h2>Statistics</h2><h2 style="font-size:14px;">Data Usage</h2><span>Downloaded: </span> <span id="totalRX">Loading...</span><br>
+    <span>Uploaded:</span> <span id="totalTX">Loading...</span><br><span>Now: </span> <span id="bandwidth">Loading...</span><br><br>
+
     </div>
 
 		<div class="flexbox">
       
-        <h2>Einstellungen</h2><br>
+        <h2>Setting</h2><br>
         <form>
       <label for="input-box">Network Name:</label>
       <input type="text" id="input-box" placeholder="Network Name">
@@ -44,7 +45,10 @@
 
     <div class="flexbox">
       
-    <h2>Infos</h2><br><br><br>
+    <h2>System Statistics</h2><br><br>
+    <span>Processor: </span> <span id="processor">Loading...</span><br>
+    <span>Memory:</span> <span id="memory">Loading...</span><br>
+    <span>Temprature:</span> <span id="temp">Loading...</span>
     </div>
 
     <div class="flexbox">
