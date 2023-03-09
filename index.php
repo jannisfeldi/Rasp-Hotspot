@@ -91,6 +91,7 @@
       const totalRX = document.getElementById("totalRX");
       const totalTX = document.getElementById("totalTX");
       const bandwidth = document.getElementById("bandwidth");
+      const connectedDevices = document.getElementById("connceteddevices");
 
       // Make an HTTP request to the API
       fetch("getNetworkUsage.php?type=download")
@@ -116,6 +117,15 @@
         .then(data => {
           // Update the text of the span element with the response data
           bandwidth.textContent = data;
+        })
+        .catch(error => {
+          console.error("Error fetching network usage data:", error);
+       });
+       fetch("getConnectedDevices.php")
+        .then(response => response.text())
+        .then(data => {
+          // Update the text of the span element with the response data
+          connectedDevices.textContent = data;
         })
         .catch(error => {
           console.error("Error fetching network usage data:", error);
