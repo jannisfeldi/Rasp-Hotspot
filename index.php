@@ -36,7 +36,7 @@
 		<div class="flexbox">
       
         <h2>Setting</h2><br>
-        <form>
+        <form onsubmit="submitForm(); return false;">
       <label for="input-box">Network Name:</label>
       <input type="text" id="input-box" placeholder="Network Name">
       <label for="input-box">Network Password:</label>
@@ -147,8 +147,19 @@
        });
     }
     // Update state every 5 seconds
-    setInterval(updateNetworkUsage, 1000);
-    setInterval(updateSystem, 1000);
+    setInterval(updateNetworkUsage, 2000);
+    setInterval(updateSystem, 2000);
+
+
+
+    function submitForm() {
+  const networkName = document.getElementById("network-name").value;
+  const networkPassword = document.getElementById("network-password").value;
+  const url = `networkManager.php?action=set&network_name=${encodeURIComponent(networkName)}&network_password=${encodeURIComponent(networkPassword)}`;
+  const xhr = new XMLHttpRequest();
+  xhr.open("GET", url);
+  xhr.send();
+}
   </script>
 </body>
 </html>
