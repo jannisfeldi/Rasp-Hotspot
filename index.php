@@ -56,8 +56,7 @@
       
     <h2>System</h2><br><br><br>
 
-
-    <button onclick='window.location.href = "shutdown.php";' class="button-red">Shutdown</button>
+    <button onclick='window.location.href = "shutdown.php";' class="button-red">Herunt</button>
     </div>
 
 	</div>
