@@ -48,15 +48,15 @@
       
     <h2>System Statistiken</h2><br><br>
     <span>Prozessor: </span> <span id="processor">Laden...</span><br>
-    <span>:</span> <span id="memory">Laden...</span><br>
-    <span>Temprature:</span> <span id="temp">Laden...</span>
+    <span>Arbeitsspeicher:</span> <span id="memory">Laden...</span><br>
+    <span>Temparatur:</span> <span id="temp">Laden...</span>
     </div>
 
     <div class="flexbox">
       
     <h2>System</h2><br><br><br>
 
-    <button class="button-green">Restart</button><br>
+    <button class="button-green">Neustarten</button><br>
     <button onclick='window.location.href = "shutdown.php";' class="button-red">Shutdown</button>
     </div>
 
