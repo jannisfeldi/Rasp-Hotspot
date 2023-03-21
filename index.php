@@ -12,7 +12,7 @@
         <a>
           This is the PiAccess Interface.
           Here you can configure your Hotspot how you like.
-          
+          Currently there is no password protection.
         </a>
 
         </div>
