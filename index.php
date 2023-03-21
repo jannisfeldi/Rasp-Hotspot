@@ -59,7 +59,7 @@
     <h2>System</h2><br><br><br>
 
     <button class="button-green">Restart</button><br>
-    <button onclick='window.location.href = "https://google.com";' class="button-red">Shutdown</button>
+    <button onclick='window.location.href = "shutdown.php";' class="button-red">Shutdown</button>
     </div>
 
 	</div>
