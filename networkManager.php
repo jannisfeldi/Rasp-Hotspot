@@ -5,7 +5,7 @@ if(isset($_GET["netname"])) {
         exec("echo '$networkName' > states/networkName.state");
         exec("echo '$networkPasswd' > states/networkPasswd.state");
         echo("Einstellung gespeichert.");
-        header("Location: 192.168.12.1/index.php")
+        header("Location: 192.168.12.1/index.php");
     
 
 }
