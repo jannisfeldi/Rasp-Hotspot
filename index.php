@@ -33,10 +33,10 @@
 
 		<div class="flexbox">
       
-        <h2>Setting</h2><br>
+        <h2>Einstellungen</h2><br>
         <form action="networkManager.php" method="GET">
       <label for="input-box">Network Name:</label>
-      <input name="netname" type="text" id="input-box network-name" placeholder="Network Name">
+      <input name="netname" type="text" id="input-box network-name" placeholder="Neuer Netzwerk Name">
       <label for="input-box">Network Password:</label>
       <input name="netpswd" type="password" id="input-box network-password"" placeholder="Network Password">
       <button type="submit" class="button-green">Save Changes & Restart Network</button>
