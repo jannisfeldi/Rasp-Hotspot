@@ -26,8 +26,8 @@
 
 		<div class="flexbox">
         
-        <h2>Statistics</h2><h2 style="font-size:14px;">Data Usage</h2><span>Downloaded: </span> <span id="totalRX">Loading...</span><br>
-    <span>Uploaded:</span> <span id="totalTX">Loading...</span><br><span>Now: </span> <span id="bandwidth">Loading...</span><br><br>
+        <h2>Statistics</h2><h2 style="font-size:14px;">Data Usage</h2><span>Downloaded: </span> <span id="totalRX">Laden...</span><br>
+    <span>Uploaded:</span> <span id="totalTX">Laden...</span><br><span>Now: </span> <span id="bandwidth">Laden...</span><br><br>
 
     </div>
 
@@ -47,9 +47,9 @@
     <div class="flexbox">
       
     <h2>System Statistics</h2><br><br>
-    <span>Processor: </span> <span id="processor">Loading...</span><br>
-    <span>Memory:</span> <span id="memory">Loading...</span><br>
-    <span>Temprature:</span> <span id="temp">Loading...</span>
+    <span>Processor: </span> <span id="processor">Laden...</span><br>
+    <span>Memory:</span> <span id="memory">Laden...</span><br>
+    <span>Temprature:</span> <span id="temp">Laden...</span>
     </div>
 
     <div class="flexbox">
