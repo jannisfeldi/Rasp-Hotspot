@@ -10,7 +10,8 @@
     
         <h2>Welcome</h2><br><br>
         <a>
-          
+          Das hier ist das PiAccess Webinterface
+          Hier kannst du einstellungen machen die du willst
         </a>
 
         </div>
