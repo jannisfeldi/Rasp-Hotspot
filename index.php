@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>PiAccess Interface</title>
+	<title>PiAccess WebInt</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
