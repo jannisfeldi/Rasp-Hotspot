@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>PiAccess WebInt</title>
+	<title>PiAccess WebInterface</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -10,10 +10,7 @@
     
         <h2>Welcome</h2><br><br>
         <a>
-          This is the PiAccess Interface.
-          You can set and setting for the WiFi 
-          and control it completly from here.
-          You are also able to see Statistics about the System and Network.
+          This is the PiAccess Interface. 
         </a>
 
         </div>
