@@ -46,9 +46,9 @@
 
     <div class="flexbox">
       
-    <h2>System Statisti</h2><br><br>
-    <span>Processor: </span> <span id="processor">Laden...</span><br>
-    <span>Memory:</span> <span id="memory">Laden...</span><br>
+    <h2>System Statistiken</h2><br><br>
+    <span>Prozessor: </span> <span id="processor">Laden...</span><br>
+    <span>:</span> <span id="memory">Laden...</span><br>
     <span>Temprature:</span> <span id="temp">Laden...</span>
     </div>
 
