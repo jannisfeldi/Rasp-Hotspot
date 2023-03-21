@@ -38,8 +38,8 @@
       <label for="input-box">Network Name:</label>
       <input name="netname" type="text" id="input-box network-name" placeholder="Neuer Netzwerk Name">
       <label for="input-box">Network Password:</label>
-      <input name="netpswd" type="password" id="input-box network-password"" placeholder="Network Password">
-      <button type="submit" class="button-green">Save Changes & Restart Network</button>
+      <input name="netpswd" type="password" id="input-box network-password"" placeholder="Neues Netzwerk passwort:">
+      <button type="submit" class="button-green">Speichern und </button>
     </form>
     
     </div>
