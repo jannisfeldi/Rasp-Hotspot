@@ -18,7 +18,7 @@
 
 		<div class="flexbox">
 
-        <h2>Connected devices</h2><br><br><br>
+        <h2>Verbundene Geräte:</h2><br><br><br>
         <span id="connecteddevices"></span>
       
       
