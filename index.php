@@ -26,7 +26,7 @@
 
 		<div class="flexbox">
         
-        <h2>Statistics</h2><h2 style="font-size:14px;">Data Usage</h2><span>Downloaded: </span> <span id="totalRX">Laden...</span><br>
+        <h2>Statistics</h2><h2 style="font-size:14px;">Datennutzung</h2><span>Downloaded: </span> <span id="totalRX">Laden...</span><br>
     <span>Uploaded:</span> <span id="totalTX">Laden...</span><br><span>Now: </span> <span id="bandwidth">Laden...</span><br><br>
 
     </div>
