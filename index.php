@@ -39,14 +39,14 @@
       <input name="netname" type="text" id="input-box network-name" placeholder="Neuer Netzwerk Name">
       <label for="input-box">Network Password:</label>
       <input name="netpswd" type="password" id="input-box network-password"" placeholder="Neues Netzwerk passwort:">
-      <button type="submit" class="button-green">Speichern und </button>
+      <button type="submit" class="button-green">Speichern und das Netzwerk neu starten.</button>
     </form>
     
     </div>
 
     <div class="flexbox">
       
-    <h2>System Statistics</h2><br><br>
+    <h2>System Statisti</h2><br><br>
     <span>Processor: </span> <span id="processor">Laden...</span><br>
     <span>Memory:</span> <span id="memory">Laden...</span><br>
     <span>Temprature:</span> <span id="temp">Laden...</span>
