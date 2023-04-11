@@ -27,12 +27,11 @@
 		<div class="flexbox">
         
         <h2>Statistics</h2><h2 style="font-size:14px;">Datennutzung</h2><span>Heruntergeladen: </span> <span id="totalRX">Laden...</span><br>
-    <span>Hochgeladen::</span> <span id="totalTX">Laden...</span><br><span>Aktuell: </span> <span id="bandwidth">Laden...</span><br><br>
+        <span>Hochgeladen::</span> <span id="totalTX">Laden...</span><br><span>Aktuell: </span> <span id="bandwidth">Laden...</span><br><br>
 
     </div>
 
 		<div class="flexbox">
-      
         <h2>Einstellungen</h2><br>
         <form action="networkManager.php" method="GET">
       <label for="input-box">Network Name:</label>
@@ -40,6 +39,7 @@
       <label for="input-box">Network Password:</label>
       <input name="netpswd" type="password" id="input-box network-password"" placeholder="Neues Netzwerk passwort:">
       <button type="submit" class="button-green">Speichern und das Netzwerk neu starten.</button>
+      <span>Achtung: Nach dem Speichern müssen sie sich neu verbinden mit dem WLAN</span>
     </form>
     
     </div>

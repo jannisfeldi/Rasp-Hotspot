@@ -6,6 +6,7 @@ if(isset($_GET["netname"])) {
         exec("echo '$networkPasswd' > states/networkPasswd.state");
         echo("Einstellung gespeichert.");
         header("Refresh: 2; URL=index.php");
+        exec("sudo systemctl restart wlanctl");
     
 
 }
