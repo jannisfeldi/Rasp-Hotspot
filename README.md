@@ -1,8 +1,7 @@
 # Rasp-Hotspot
 
 
-To install this Execute the following code snippet in your Raspberrypi Terminal/cli
-Make sure to use Raspberry PI x64 system
+The below script is going to work soon.
 ````
-curl https://piaccess.space/install | bash
+curl https://piaccess.space/soon | bash
 ````
